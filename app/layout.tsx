@@ -1,14 +1,15 @@
 // library
 import type { Metadata } from "next";
 
+// data
+import { shopifyAuth } from "@/shopify.config";
+
 // components
+import { AppProvider } from "@shopify/polaris";
+import { NavMenu } from '@shopify/app-bridge-react';
+import polarisTranslations from "@shopify/polaris/locales/en.json";
+
 import Script from "next/script";
-
-// styles
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: [ "latin" ] });
 
 export const metadata: Metadata = {
   title: "Product Sourcing App",
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   `,
   verification: {
     other: {
-      'shopify-api-key': process.env.SHOPIFY_APP_CLIENT_ID ?? 'Error retrieving key'
+      'shopify-api-key': shopifyAuth.clientId
     }
   }
 };
@@ -30,15 +31,18 @@ export const metadata: Metadata = {
   children: React.ReactNode;
 }>) => {
   return (
-    <html lang="en">
-      <body className={ inter.className }>
-        { children }
-        <Script 
-          src="https://cdn.shopify.com/shopifycloud/app-bridge.js" 
-          strategy="beforeInteractive"
-        />
-      </body>
-    </html>
+    <>
+      <AppProvider i18n={ polarisTranslations }>
+        <NavMenu>
+          <a href="/" rel="home">Home</a>
+        </NavMenu>
+      </AppProvider>
+      <Script 
+        src="https://cdn.shopify.com/shopifycloud/app-bridge.js" 
+        strategy="beforeInteractive"
+      />
+    </>
+   
   );
 };
 
