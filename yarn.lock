@@ -966,6 +966,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@shopify/app-bridge-core@npm:1.1.1":
+  version: 1.1.1
+  resolution: "@shopify/app-bridge-core@npm:1.1.1"
+  checksum: 10c0/760c31830d33976768023f8aecc0140e441412a2d66eea0586714e3493fa939c1380573ba0c42c30f9ef11bc2bf8ddfab34423f36ea4dead4621457aa46e9832
+  languageName: node
+  linkType: hard
+
+"@shopify/app-bridge-react@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "@shopify/app-bridge-react@npm:4.1.2"
+  dependencies:
+    "@shopify/app-bridge-types": "npm:^0.0.10"
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  checksum: 10c0/ae83933e0905ce2e46187e1e43dfa7559f329240f1a87ef28fa6e508a64605b965c69ce8cecc2f2325d31b772b07f663253f65567950c8df14c8462068681af7
+  languageName: node
+  linkType: hard
+
+"@shopify/app-bridge-types@npm:^0.0.10":
+  version: 0.0.10
+  resolution: "@shopify/app-bridge-types@npm:0.0.10"
+  checksum: 10c0/0be2209fae3b7b17eebd97ed5ed8e839c157e87daa5515adf899e040a097247024c75c2081b3b040afa0cf429094e9b3c0e6cc36d9d4b4fddf5d8f7cdf183a65
+  languageName: node
+  linkType: hard
+
+"@shopify/app-bridge@npm:^3.7.10":
+  version: 3.7.10
+  resolution: "@shopify/app-bridge@npm:3.7.10"
+  dependencies:
+    "@shopify/app-bridge-core": "npm:1.1.1"
+    base64url: "npm:^3.0.1"
+    web-vitals: "npm:^3.0.1"
+  checksum: 10c0/0c28e519ef008c5f5bf00eb421e0a0d473cc22084305d21c254c8deb75330bf967e0edde9bfa11e0f74bfdd0818d0bb7b6cc4282107e9aa0c62f5d3e68b6404d
+  languageName: node
+  linkType: hard
+
 "@sinclair/typebox@npm:^0.27.8":
   version: 0.27.8
   resolution: "@sinclair/typebox@npm:0.27.8"
@@ -1782,6 +1819,13 @@ __metadata:
   version: 1.0.2
   resolution: "balanced-match@npm:1.0.2"
   checksum: 10c0/9308baf0a7e4838a82bbfd11e01b1cb0f0cf2893bc1676c27c2a8c0e70cbae1c59120c3268517a8ae7fb6376b4639ef81ca22582611dbee4ed28df945134aaee
+  languageName: node
+  linkType: hard
+
+"base64url@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "base64url@npm:3.0.1"
+  checksum: 10c0/5ca9d6064e9440a2a45749558dddd2549ca439a305793d4f14a900b7256b5f4438ef1b7a494e1addc66ced5d20f5c010716d353ed267e4b769e6c78074991241
   languageName: node
   linkType: hard
 
@@ -5458,6 +5502,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "product-sourcing-app@workspace:."
   dependencies:
+    "@shopify/app-bridge": "npm:^3.7.10"
+    "@shopify/app-bridge-react": "npm:^4.1.2"
+    "@shopify/app-bridge-types": "npm:^0.0.10"
     "@testing-library/jest-dom": "npm:^6.4.2"
     "@testing-library/react": "npm:^14.2.2"
     "@types/jest": "npm:^29.5.12"
@@ -6608,6 +6655,13 @@ __metadata:
   dependencies:
     makeerror: "npm:1.0.12"
   checksum: 10c0/a17e037bccd3ca8a25a80cb850903facdfed0de4864bd8728f1782370715d679fa72e0a0f5da7c1c1379365159901e5935f35be531229da53bbfc0efdabdb48e
+  languageName: node
+  linkType: hard
+
+"web-vitals@npm:^3.0.1":
+  version: 3.5.2
+  resolution: "web-vitals@npm:3.5.2"
+  checksum: 10c0/662b385d6e96a18677cf8726454b65f3aecfdca330df72a82f73f293a5708ba9d191964649f8d363a1e64062a826a99805ade8c573a6492b91e02275b6860308
   languageName: node
   linkType: hard
 

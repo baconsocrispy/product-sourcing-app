@@ -11,11 +11,14 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
+    "@shopify/app-bridge": "^3.7.10",
+    "@shopify/app-bridge-react": "^4.1.2",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@shopify/app-bridge-types": "^0.0.10",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.2",
     "@types/jest": "^29.5.12",
