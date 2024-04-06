@@ -10,12 +10,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: NodeTool@0
+- task: vercel-deployment-task@1
   inputs:
-    versionSpec: '>=19.3.0'
-  displayName: 'Install Node.js'
-
-- script: |
-    yarn install
-    yarn build
-  displayName: 'yarn install and build'
+    vercelProjectId: 'prj_ZqpEXw4oPxP9aE4SNqo1bfnOFdSv'
+    vercelOrgId: 'ap0AK6OPzONvQbgkg1pr9KLc'
+    vercelToken: $(VERCEL_TOKEN)
+    production: true
